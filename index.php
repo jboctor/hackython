@@ -9,6 +9,9 @@
                 $(window).on("keypress", function (event) {
                     console.log(event);
                 });
+                $(window).on("click", function (event) {
+                    console.log(event);
+                });
             });
         </script>
         <title>
