@@ -9,13 +9,17 @@
                 var current_char = "0";
                 var count = 0;
                 $(window).on("keypress", function (event) {
+                    pressed_char = String.fromCharCode(event.charCode);
+                    if (typeOf pressed_char == "String") {
+                        current_char = pressed_char;
+                    }
+                    console.log(event);
+                });
+                $(window).on("click", function (event) {
                     div = $("<div>", {id: "div_" + count, class: "click " + current_char});
                     $(div).text(current_char);
                     $("body").append(div);
                     count++;
-                    console.log(event);
-                });
-                $(window).on("click", function (event) {
                     console.log(event);
                 });
             });
