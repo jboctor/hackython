@@ -5,8 +5,10 @@
     <head>
         <script type="text/javascript" src="jquery-2.2.4.min.js"></script>
         <script type="text/javascript">
-            $.on("keypress", function (event) {
-                console.log(event);
+            $(function () {
+                $.on("keypress", function (event) {
+                    console.log(event);
+                });
             });
         </script>
         <title>
