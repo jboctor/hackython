@@ -29,9 +29,9 @@
                     $(div).css("left", event.pageX - $(div).width() / 2)
                           .css("top", event.pageY - $(div).height() / 2)
                           .text(current_char);
+                    $("body").append(div);
                     console.log($(div).width());
                     console.log($(div).height());
-                    $("body").append(div);
                     count++;
                 });
             });
