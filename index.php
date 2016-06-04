@@ -11,7 +11,7 @@
                 $(window).on("keypress", function (event) {
                     pressed_char = String.fromCharCode(event.charCode);
                     console.log(typeof pressed_char);
-                    if (typeof pressed_char == "String") {
+                    if (typeof pressed_char == "string") {
                         current_char = pressed_char;
                     }
                 });
