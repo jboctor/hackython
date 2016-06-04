@@ -10,6 +10,9 @@
                     return false;
                 });
                 var current_char = "0";
+                var font_size = "20px";
+                var font = "Sans Serif";
+                var font_color = "black";
                 var count = 0;
                 $(document).on("keypress", function (event) {
                     pressed_char = String.fromCharCode(event.charCode);
@@ -20,19 +23,17 @@
                 $(document).on("click", function (event) {
                     div = $("<div>", {id: "div_" + count, class: "click " + current_char});
                     $(div).css("position", "absolute")
-                          .css("left", event.pageX)
-                          .css("top", event.pageY)
+                          .css("font-size", font_size)
+                          .css("font", font)
+                          .css("color", font_color)
+                          .css("left", event.pageX - $(div).width() / 2)
+                          .css("top", event.pageY - $(div).height() / 2);
                           .text(current_char);
                     $("body").append(div);
                     count++;
                 });
             });
         </script>
-        <style>
-            .click {
-                font-size: 5em;
-            }
-        </style>
         <title>
             Click Type
         </title>
