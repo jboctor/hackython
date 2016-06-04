@@ -28,7 +28,13 @@
                 });
             });
         </script>
+        <style>
+            .click {
+                font-size: 5em;
+            }
+        </style>
         <title>
+            Click Type
         </title>
     </head>
     <body>
