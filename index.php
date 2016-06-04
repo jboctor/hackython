@@ -5,7 +5,7 @@
     <head>
         <script type="text/javascript" src="jquery-2.2.4.min.js"></script>
         <script type="text/javascript">
-            $.keypress(function (event) {
+            $.on("keypress", function (event) {
                 console.log(event);
             });
         </script>
