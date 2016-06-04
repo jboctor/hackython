@@ -7,10 +7,12 @@
         <script type="text/javascript">
             $(function () {
                 var current_char = "0";
+                var count = 0;
                 $(window).on("keypress", function (event) {
                     div = $("<div>", {id: "div_" + count, class: "click " + current_char});
                     div.innerText(current_char);
                     $(window).append(div);
+                    count++;
                     console.log(event);
                 });
                 $(window).on("click", function (event) {
