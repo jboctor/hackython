@@ -10,7 +10,7 @@
                     return false;
                 });
                 var current_char = "0";
-                var font_size = "20px";
+                var font_size = "50px";
                 var font = "Sans Serif";
                 var font_color = "black";
                 var count = 0;
@@ -26,7 +26,7 @@
                           .css("font-size", font_size)
                           .css("font", font)
                           .css("color", font_color)
-                          .css("left", event.pageX - $(div).width() / 2)
+                    $(div).css("left", event.pageX - $(div).width() / 2)
                           .css("top", event.pageY - $(div).height() / 2)
                           .text(current_char);
                     $("body").append(div);
