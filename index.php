@@ -26,6 +26,8 @@
                           .css("font-size", font_size)
                           .css("font", font)
                           .css("color", font_color);
+                    console.log($(div).width());
+                    console.log($(div).height());
                     $(div).css("left", event.pageX - $(div).width() / 2)
                           .css("top", event.pageY - $(div).height() / 2)
                           .text(current_char);
