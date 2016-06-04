@@ -32,17 +32,11 @@
                           .css("top", event.pageY - $(div).height() / 2);
                     count++;
                 });
-                $("#clear").on("click", function (event) {
-                    $("body").html("");
-                });
             });
         </script>
         <title>
             Click Type
         </title>
-        <div id="clear">
-            Clear
-        </div>
     </head>
     <body>
     </body>
