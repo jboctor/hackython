@@ -27,7 +27,7 @@
                           .css("font", font)
                           .css("color", font_color)
                           .css("left", event.pageX - $(div).width() / 2)
-                          .css("top", event.pageY - $(div).height() / 2);
+                          .css("top", event.pageY - $(div).height() / 2)
                           .text(current_char);
                     $("body").append(div);
                     count++;
