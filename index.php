@@ -11,7 +11,7 @@
                 $(window).on("keypress", function (event) {
                     div = $("<div>", {id: "div_" + count, class: "click " + current_char});
                     $(div).text(current_char);
-                    $(window).append(div);
+                    $("body").append(div);
                     count++;
                     console.log(event);
                 });
