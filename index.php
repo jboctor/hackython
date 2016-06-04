@@ -40,10 +40,10 @@
         <title>
             Click Type
         </title>
-    </head>
-    <body>
         <div id="clear">
             Clear
         </div>
+    </head>
+    <body>
     </body>
 </html>
