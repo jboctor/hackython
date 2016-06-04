@@ -32,6 +32,9 @@
                           .css("top", event.pageY - $(div).height() / 2);
                     count++;
                 });
+                $("#clear").on("click", function (event) {
+                    $("body").html("");
+                });
             });
         </script>
         <title>
@@ -39,5 +42,8 @@
         </title>
     </head>
     <body>
+        <div id="clear">
+            Clear
+        </div>
     </body>
 </html>
