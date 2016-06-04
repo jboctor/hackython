@@ -10,14 +10,16 @@
                 var count = 0;
                 $(window).on("keypress", function (event) {
                     pressed_char = String.fromCharCode(event.charCode);
-                    console.log(typeof pressed_char);
                     if (typeof pressed_char == "string") {
                         current_char = pressed_char;
                     }
                 });
                 $(window).on("click", function (event) {
                     div = $("<div>", {id: "div_" + count, class: "click " + current_char});
-                    $(div).text(current_char);
+                    $(div).css("position", "absolute")
+                          .css("left", event.pageX)
+                          .css("top", event.pageY)
+                          .text(current_char);
                     $("body").append(div);
                     count++;
                 });
