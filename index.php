@@ -10,7 +10,7 @@
                 var count = 0;
                 $(window).on("keypress", function (event) {
                     pressed_char = String.fromCharCode(event.charCode);
-                    if (typeOf pressed_char == "String") {
+                    if (typeof pressed_char == "String") {
                         current_char = pressed_char;
                     }
                     console.log(event);
